@@ -1,1 +1,336 @@
-a
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Pricing | Grammarly</title>
+</head>
+<body>
+    <header class="site-header">
+        <nav class="nav container">
+            <a class="logo" href="index.html">
+                <span class="logo-logo">G</span>
+                <span>Grammarly</span>
+            </a>
+            <div class="nav-links">
+                <a href="about.html">About</a>
+                <a href="pricing.html" class="active">Pricing</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+            <a class="nav-action" href="contact.html">Get Started</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="pricing-hero">
+            <div class="container hero-center">
+                <p class="eyebrow">Plans & Pricing</p>
+                <h1>Write confidently, write with Grammarly</h1>
+            </div>
+        </section>
+
+        <section class="pricing-plans container">
+            <div class="pay-types">
+                <p class="toggle-label active">Monthly</p>
+                <label class="switch" for="billing-toggle">
+                    <input type="checkbox" id="billing-toggle" aria-label="Toggle billing cycle">
+                    <span class="slider"></span>
+                </label>
+                <p class="toggle-label">Yearly <span class="save-badge">Save up to 60%</span></p>
+            </div>
+            
+            <div class="plans-panel">
+                <div class="plan-card">
+                    <div class="card-header">
+                        <h2>Free</h2>
+                        <p class="plan-description">Basic writing suggestions and tone detection.</p>
+                    </div>
+                    <div class="price-block">
+                        <div class="price">
+                            <span class="currency">$</span><span class="amount">0</span><span class="period">USD/mo</span>
+                        </div>
+                        <p class="billing-note">Free forever</p>
+                    </div>
+                    <a href="contact.html" class="button secondary full-width">Get Started</a>
+                    <ul class="features-list">
+                        <li>Grammar, spelling, and punctuation errors</li>
+                        <li>Conciseness improvements</li>
+                        <li>Basic tone detection</li>
+                        <li>100 AI prompts per month</li>
+                    </ul>
+                </div>
+                
+                <div class="plan-card highlighted">
+                    <span class="popular-badge">Most Popular</span>
+                    <div class="card-header">
+                        <h2>Pro</h2>
+                        <p class="plan-description">Advanced writing feedback, clarity rewrites, and plagiarism checks.</p>
+                    </div>
+                    <div class="price-block">
+                        <div class="price">
+                            <span class="currency">$</span><span class="amount" id="pro-price">12</span><span class="period">USD/mo</span>
+                        </div>
+                        <p class="billing-note" id="pro-note">Billed annually ($144)</p>
+                    </div>
+                    <a href="contact.html" class="button primary full-width">Upgrade to Pro</a>
+                    <ul class="features-list">
+                        <li class="list-divider">Everything in Free, plus:</li>
+                        <li>Full-sentence rewrites for clarity</li>
+                        <li>Vocabulary and variety suggestions</li>
+                        <li>Tone, formality, and politeness adjustments</li>
+                        <li>Plagiarism detector</li>
+                        <li>1,000 AI prompts per month</li>
+                    </ul>
+                </div>
+                
+                <div class="plan-card">
+                    <div class="card-header">
+                        <h2>Enterprise</h2>
+                        <p class="plan-description">Enterprise-grade security, administrative control, and team style guides.</p>
+                    </div>
+                    <div class="price-block">
+                        <div class="price">
+                            <span class="amount">Custom</span>
+                        </div>
+                        <p class="billing-note">Tailored for organizations</p>
+                    </div>
+                    <a href="contact.html" class="button secondary full-width">Contact Sales</a>
+                    <ul class="features-list">
+                        <li class="list-divider">Everything in Pro, plus:</li>
+                        <li>Company-wide style guides</li>
+                        <li>Single Sign-On (SSO/SAML)</li>
+                        <li>Centralized admin panel & team billing</li>
+                        <li>Dedicated customer success support</li>
+                        <li>Unlimited AI prompts</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-comparison-table container">
+            <h2>Compare Plans</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Features & Tools</th>
+                            <th>Free</th>
+                            <th>Pro</th>
+                            <th>Enterprise</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="table-category">
+                            <td colspan="4">Core Mechanics</td>
+                        </tr>
+                        <tr>
+                            <td>Grammar, spelling, and punctuation repairs</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Conciseness adjustments</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Full-sentence structural rewrites</td>
+                            <td class="dash">—</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Vocabulary enrichment alternatives</td>
+                            <td class="dash">—</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        
+                        <tr class="table-category">
+                            <td colspan="4">Context & Tone</td>
+                        </tr>
+                        <tr>
+                            <td>Real-time tone analyzer</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Formality adjustments</td>
+                            <td class="dash">—</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        
+                        <tr class="table-category">
+                            <td colspan="4">Advanced Assistance</td>
+                        </tr>
+                        <tr>
+                            <td>Monthly AI prompts</td>
+                            <td>100 / mo</td>
+                            <td>1,000 / mo</td>
+                            <td>Unlimited</td>
+                        </tr>
+                        <tr>
+                            <td>Integrated plagiarism scanner</td>
+                            <td class="dash">—</td>
+                            <td class="check">✓</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        
+                        <tr class="table-category">
+                            <td colspan="4">Management & Operations</td>
+                        </tr>
+                        <tr>
+                            <td>Central user provisioning (SSO)</td>
+                            <td class="dash">—</td>
+                            <td class="dash">—</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Shared corporate style guides</td>
+                            <td class="dash">—</td>
+                            <td class="dash">—</td>
+                            <td class="check">✓</td>
+                        </tr>
+                        <tr>
+                            <td>Priority customer service options</td>
+                            <td class="dash">—</td>
+                            <td class="dash">—</td>
+                            <td class="check">✓</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="pricing-testimonials container">
+            <article class="testimonial">
+                <p class="quote">"Grammarly has drastically reduced my editing overhead. Emails are crisp and clear instantly."</p>
+                <div class="meta">
+                    <span class="author">Sarah J.</span>
+                    <span class="role">Marketing Lead</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"As a non-native English speaker, Grammarly Pro gives me total confidence in my technical reports."</p>
+                <div class="meta">
+                    <span class="author">Alexey K.</span>
+                    <span class="role">Software Architect</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"The full-sentence rewrite feature catches clunky wording like nothing else. Phenomenal tool."</p>
+                <div class="meta">
+                    <span class="author">Elena R.</span>
+                    <span class="role">Academic Researcher</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"Deploying the Enterprise tier across our sales org ensured our brand identity stayed completely uniform."</p>
+                <div class="meta">
+                    <span class="author">David L.</span>
+                    <span class="role">VP of Sales</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"The real-time tone analyzer saves me from sending mistakenly blunt messages to my team."</p>
+                <div class="meta">
+                    <span class="author">Michelle T.</span>
+                    <span class="role">Project Manager</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"Saving hours on proofreading client briefs every single week. The Pro plan pays for itself instantly."</p>
+                <div class="meta">
+                    <span class="author">James O.</span>
+                    <span class="role">Financial Analyst</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"Using the generative AI prompts for brainstorming has broken my writer's block completely."</p>
+                <div class="meta">
+                    <span class="author">Chloe M.</span>
+                    <span class="role">Content Writer</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"My grades have improved ever since I started catching my passive-voice tendencies with Grammarly."</p>
+                <div class="meta">
+                    <span class="author">Liam W.</span>
+                    <span class="role">Undergraduate Student</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"The plagiarism detector gives our publication ironclad safety guarantees before going live."</p>
+                <div class="meta">
+                    <span class="author">Nadia B.</span>
+                    <span class="role">Managing Editor</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"SSO integration and account management tools made deploying to 400+ seats totally painless."</p>
+                <div class="meta">
+                    <span class="author">Robert G.</span>
+                    <span class="role">IT Operations Director</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"It flags subtle errors that my tired eyes completely miss during late-night drafting sessions."</p>
+                <div class="meta">
+                    <span class="author">Jessica H.</span>
+                    <span class="role">Freelance Novelist</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"Our remote client relations team now writes with absolute unity and authority."</p>
+                <div class="meta">
+                    <span class="author">Marcus P.</span>
+                    <span class="role">Customer Success Director</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"The dynamic vocabulary suggestions keep my copy feeling energetic and less repetitive."</p>
+                <div class="meta">
+                    <span class="author">Tanya S.</span>
+                    <span class="role">PR Consultant</span>
+                </div>
+            </article>
+            <article class="testimonial">
+                <p class="quote">"Invaluable for structural refinement on highly critical compliance legal files."</p>
+                <div class="meta">
+                    <span class="author">Arthur M.</span>
+                    <span class="role">Corporate Counsel</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <a class="logo" href="index.html">
+                    <span class="logo-logo">G</span>
+                    <span>Grammarly</span>
+                </a>
+                <p>Writing support that helps every message sound clear, confident, and natural.</p>
+            </div>
+            <div class="footer-links">
+                <a href="about.html">About</a>
+                <a href="pricing.html">Pricing</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </div>
+        <div class="container footer-bottom">
+            <span>© 2026 Grammarly landing page</span>
+            <span>Built for clear communication</span>
+        </div>
+    </footer>
+</body>
+</html>
